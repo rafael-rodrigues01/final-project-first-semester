@@ -10,6 +10,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
   background-color: #020312;
   color: #fff;
+  border: 2px solid red;
 }
 
 .menu {
@@ -26,4 +27,17 @@ body {
   text-decoration: none;
   padding: 10px 15px;
   transition: background-color 0.3s ease;
+}
+
+.container {
+  background-image: url(../../assets/background.webp);
+  border: 2px solid orange;
+}
+
+.container .content {
+  border: 2px solid yellow;
+}
+
+.industrial-card {
+
 }
