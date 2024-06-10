@@ -154,10 +154,74 @@ h3 {
   padding: 10px;
   background-color: bisque;
   border-radius: 5px;
+  width: 50%;
 }
 
 .cardinalidade-container .content ul {
   padding-left: 40px;
 }
+
+footer {
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 10px 15px;
+}
+
+.footer-links a {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #21a1f1;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links li {
+    margin: 5px 0;
+  }
+}
+
+/* footer {
+  background-color: #4e4e4e;
+  display: flex;
+  justify-content: center;
+}
+
+footer h3 {
+  padding: 10px;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer li a {
+  text-decoration: none;
+} */
 
 
