@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 body {
   font-family: 'Fira Sans', sans-serif;
   background-color: #020312;
@@ -27,3 +31,133 @@ body {
   padding: 10px 15px;
   transition: background-color 0.3s ease;
 }
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/database-background.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.container .content {
+  position: relative;
+  z-index: 1;
+}
+
+/* initial component */
+
+.introdution-card {
+  display: flex;
+  justify-content: center;
+}
+
+.introdution-card .card {
+  padding: 10px;
+}
+
+.introdution-card .card .text {
+  text-align: center;
+}
+
+.introdution-card .card p {
+  padding: 10px;
+}
+
+.introdution-card .card .img {
+  margin: 0 5px 0 5px;
+}
+
+/* left buttom */
+
+.left-button {
+  margin-left: 10%;
+}
+
+.left-button img {
+  margin-bottom: 10px;
+}
+
+/* first-project */
+
+main .title {
+  text-align: center;
+  margin:30px 0 30px 0;
+  color: #F26C4F;
+}
+
+main h3 {
+  padding: 20px 0 20px 0;
+}
+
+.introdution-card .card {
+  text-align: center;
+}
+
+.introdution-card .card .container {
+  display: flex;
+  justify-content: center;
+}
+
+.introdution-card .card .container div img{
+  width: 50%;
+}
+
+.introdution-card .card .image-info img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.introdution-card .card .image-info h3 {
+  padding-bottom: 10px;
+}
+
+.introdution-card .card .container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  background-color: #4e4e4e;
+  border-radius: 10px;
+}
+
+.introdution-card .card .container .list {
+  list-style-type: decimal;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+h3 {
+  text-align: center;
+}
+
+.cardinalidade-container {
+  display: flex;
+  justify-content: center;
+  color: #020312;
+  margin-bottom: 10px;
+}
+
+.cardinalidade-container .content {
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 5px;
+}
+
+.cardinalidade-container .content ul {
+  padding-left: 40px;
+}
+
+
