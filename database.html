@@ -16,6 +16,219 @@
     <a href="./programming.html" >PROGRAMMING LANGUAGE</a>
     <a href="./data-science.html" >DATA SCIENCE</a>
   </nav>
-  <h1>Database</h1>
+  
+  
+  <main class="container">
+    <!-- initial component -->
+    <section class="introdution-card">
+      <div class="card">
+        <h1 class="text">Database</h1>
+        <p class="text">Professor: Cainã</p>
+        <img class="img" src="./assets/postgreSQL.png" alt="postgreSQL" />
+        <img class="img" src="./assets/diagrama-er.png" alt="diagrama-er" />
+        <img class="img" src="./assets/mongodb.png" alt="mongodb" />
+      </div>
+    </section>
+
+    <!-- left-buttom -->
+    <a class="left-button" href="./index.html">
+      <img src="./assets/left-button.png" alt="left-button" title="HOME"/>
+    </a>
+
+     <!-- first-project -->
+     <section class="introdution-card">
+      <div class="card">
+        <div class="image-info">
+          <h3>Types of Data</h3>
+          <img src="./assets/tipes-of-data.png" alt="Tipes of Data" />
+        </div>
+        <h3>What I learned:</h3>
+        <div class="container">
+          <div>
+            <img src="./assets/resumo.jpeg" alt="resumo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="title">Relational Database</h2>
+
+    <h3>Cardinality</h3>
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>1:1</p>
+        <ul>
+          <li>An employee belongs to at least 1 department and at most 1 department.</li>
+          <li>A department can have at least 1 employee and at most n employees.</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>1:N</p>
+        <ul>
+          <li>A department can have at least 1 employee and at most n employees.</li>
+        </ul>
+      </article>
+    </article>
+
+    <section class="introdution-card">
+      <div class="card">
+        <h3>Logical Model</h3>
+        <div class="container">
+          <div>
+            <img src="./assets/modelo-logico.jpeg" alt="resumo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h3>Physical Model</h3>
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Creation of the table</p>
+        <ul>
+          <li>Patient: name, CPF, age</li>
+          <li>Doctor: name, CRM, specialty</li>
+        </ul>
+      </article>
+    </article>
+
+    <section class="introdution-card">
+      <div class="card">
+        <h3>Business rule</h3>
+        <div class="container">
+          <div>
+            <img src="./assets/regra-de-negocio.jpeg" alt="resumo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h3>Database Administration</h3>
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Comandos DDL - Data Definition Language</p>
+        <ul>
+          <li>CREATE TABLE</li>
+          <li>ALTER TABLE</li>
+          <li>DROP TABLE</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Comandos DML - Data Manipulation Language</p>
+        <ul>
+          <li>INSERT</li>
+          <li>UPDATE</li>
+          <li>DELETE</li>
+          <li>SELECT</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Comandos DQL - Data Query Language</p>
+        <ul>
+          <li>SELECT</li>
+          <li>OPERADORES SQL</li>
+          <li>FUNÇÕES SQL</li>
+          <li>ORDER BY</li>
+          <li>JOIN</li>
+          <li>GROUP BY</li>
+          <li>UNION, INTERSECT and EXCEPT</li>
+          <li>ALIASES (Apelidos para tabelas ou colunas)</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Comandos DTL - Data Trasaction Language</p>
+      <p>Linguagem de Transação de Dados.</p>
+      <p>São os comandos para controle de transação.</p>
+        <ul>
+          <li>São comandos DTL : BEGIN TRANSACTION, COMMIT E ROLLBACK</li>
+        </ul>
+      </article>
+    </article>
+
+    <h2 class="title">NoSQL Database</h2>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Flexibility in data model:</p>
+        <ul>
+          <li>Allows storing unstructured, semi-structured, and structured data without the need for a fixed schema.</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Horizontal scalability:</p>
+        <ul>
+          <li>Designed to handle large volumes of data distributed across multiple servers.</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Types of NoSQL databases:</p>
+        <ul>
+          <li>Document: MongoDB, Couchbase.</li>
+          <li>Key-value: Redis, Amazon DynamoDB.</li>
+          <li>Column: Apache Cassandra, HBase.</li>
+          <li>Graph: Neo4j, Amazon Neptune.</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Flexibility and performance:</p>
+        <ul>
+          <li>Efficient for handling large volumes of unstructured and semi-structured data.</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Flexibility in data model:</p>
+        <ul>
+          <li>Allows storing unstructured, semi-structured, and structured data without the need for a fixed schema.</li>
+          <li>UPDATE</li>
+          <li>DELETE</li>
+          <li>SELECT</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Usage across various industries:</p>
+        <ul>
+          <li>Widely used in technology, finance, media, healthcare, among others.</li>
+        </ul>
+      </article>
+    </article>
+
+    <article class="cardinalidade-container">
+      <article class="content">
+      <p>Complementary to relational databases:</p>
+        <ul>
+          <li>Provide solutions for specific data storage and retrieval problems in modern software development environments.</li>
+        </ul>
+      </article>
+    </article>
+
+
+  </main>
 </body>
 </html>
