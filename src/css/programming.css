@@ -27,3 +27,130 @@ body {
   padding: 10px 15px;
   transition: background-color 0.3s ease;
 }
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/programming-language-background.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.container .content {
+  position: relative;
+  z-index: 1;
+}
+
+/* initial component */
+
+.introdution-card {
+  display: flex;
+  justify-content: center;
+}
+
+.introdution-card .card {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.introdution-card .card .text {
+  text-align: center;
+}
+
+.introdution-card .card p {
+  padding: 10px;
+}
+
+.introdution-card .card .img {
+  margin: 0 5px 0 5px;
+}
+
+/* left buttom */
+
+.left-button {
+  margin-left: 10%;
+}
+
+.left-button img {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 10px 15px;
+}
+
+.footer-links a {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #21a1f1;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links li {
+    margin: 5px 0;
+  }
+}
+
+
