@@ -40,7 +40,7 @@
         <div class="card">
           <div class="image-info">
             <h3>Traffic Light</h3>
-            <img src="./assets/traffic-light.png" alt="traffic-light" />
+            <img src="./assets/traffic-light.gif" alt="traffic-light" />
           </div>
           <p>
             A simple traffic light uses three LEDs. The yellow LED lights up
@@ -51,7 +51,7 @@
             Next, the green LED lights up for 5 seconds and then turns off.
             Finally, the red LED lights up for 5 seconds.
           </p>
-          <a href="https://www.tinkercad.com/things/6pnFABVuUfp-copy-of-semaforo/editel" target="_blank">
+          <a href="https://www.tinkercad.com/things/6pnFABVuUfp-semaforo/editel?sharecode=cAHPRjxIHVTwhBYNjhadzz63c2CdEI6dlQwUp3dUVwY" target="_blank">
             <button>Acess Here</button>
           </a>
         </div>
@@ -61,45 +61,91 @@
       <section class="introdution-card">
         <div class="card">
           <div class="image-info">
-            <h3>Traffic Light</h3>
-            <img src="./assets/traffic-light.png" alt="traffic-light" />
+            <h3>Pedestrian traffic light</h3>
+            <img src="./assets/pedestrian-traffic-light.gif" alt="Pedestrian traffic light" />
           </div>
           <p>
-            A simple traffic light uses three LEDs. The yellow LED lights up
-            every second, for a total of three times, then turns off.
-          </p>
+            This code controls a traffic light with a pedestrian crossing button using Arduino. In the setup function, the pins are configured, and an interrupt for the button is set up. </p> 
 
-          <p>
-            Next, the green LED lights up for 5 seconds and then turns off.
-            Finally, the red LED lights up for 5 seconds.
-          </p>
-          <a href="https://www.tinkercad.com/things/6pnFABVuUfp-copy-of-semaforo/editel" target="_blank">
+            <p>loop function alternates between green (5s), yellow (3s), and red (5s), with the pedestrian red light flashing. The crossing function is triggered by the button, restarting the cycle with shorter times.</p>
+
+          <a href="https://www.tinkercad.com/things/6vU1DRwfcxF-semaforo-de-pedestre/editel?sharecode=Dfcr8EsscPKvbC1HbNYOwTxMkH4HKX1NT5OzvXzMKtE" target="_blank">
             <button>Acess Here</button>
           </a>
         </div>
       </section>
 
       <!-- third-project -->
+
       <section class="introdution-card">
         <div class="card">
           <div class="image-info">
-            <h3>Traffic Light</h3>
-            <img src="./assets/traffic-light.png" alt="traffic-light" />
+            <h3>Warehouse automation</h3>
+            <img src="./assets/storage.gif" alt="Warehouse automation" />
           </div>
           <p>
-            A simple traffic light uses three LEDs. The yellow LED lights up
-            every second, for a total of three times, then turns off.
+            This Arduino code controls the warehouse lighting using a light sensor, RGB LEDs, and a buzzer. Depending on the detected light level, it activates a green, yellow, or red LED. The buzzer sounds when there's a change in the light level.
           </p>
-
           <p>
-            Next, the green LED lights up for 5 seconds and then turns off.
-            Finally, the red LED lights up for 5 seconds.
+            Corrections were made to ensure actions occur only when changing levels, avoiding unnecessary repetitions.
           </p>
-          <a href="https://www.tinkercad.com/things/6pnFABVuUfp-copy-of-semaforo/editel" target="_blank">
+          <a href="https://www.tinkercad.com/things/hjYsg48mDq4-automacaoarmazem-rafael-rodrigues/editel?sharecode=ryysH0wmgx3HH5cOQnaVtka0vnKmLY2pLOzo777aoD4" target="_blank">
             <button>Acess Here</button>
           </a>
         </div>
       </section>
+
+      <!-- fourth-project -->
+
+      <section class="introdution-card">
+        <div class="card">
+          <div class="image-info">
+            <h3>Serial monitor class</h3>
+            <img src="./assets/monitor-serial.gif" alt="Monitor-serial" />
+          </div>
+          <p>
+            This Arduino code controls the sequential lighting of LEDs in different colors. A potentiometer adjusts the sequence speed. The user chooses between an ascending or descending sequence via serial input. 
+          </p>
+
+          <p>
+            The LEDs are activated according to the selected option, lighting up in either ascending or descending order as specified. The program uses serial communication to interact with the user and control the LED output.
+          </p>
+          <a href="https://www.tinkercad.com/things/4OcqgEjzuaC-aula-monitor-serial/editel?sharecode=W7UNFT438W_5-7qG_Ey2LCBBl9RpQu_JPiIwNd9nGgM" target="_blank">
+            <button>Acess Here</button>
+          </a>
+        </div>
+      </section>
+
+
+      <section class="introdution-card">
+        <div class="card">
+          <div class="image-info">
+            <h3>LCD Multifunctional</h3>
+            <img src="./assets/lcd-multifunctional.gif" alt="LCD Multifunctional" />
+          </div>
+          <p>
+            The code implements a system with an LCD display and colored buttons. It provides options to count clicks, display an adjustable clock, and reset data. The functionalities are controlled by the buttons, with the main menu shown on the display.
+          </p>
+          <a href="https://wokwi.com/projects/396780962395890689" target="_blank">
+            <button>Acess Here</button>
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <h3>Exercises</h3>
+        <div class="footer-container">
+          <ol class="footer-links">
+            <li><a href="https://github.com/rafael-rodrigues01/industrial-automation">GitHub</a></li>
+            <li><a href="https://www.tinkercad.com/things/0IlBOOmgkJu-exercise01/editel?sharecode=XfPLeQtOvq7PkL5Lv6buQ-AQG64WcqSJGQToBoIhqVM" target="_blank">Exercise01</a></li>
+            <li><a href="https://www.tinkercad.com/things/eC1UwJ0d7h0-exercise02/editel?sharecode=KFCMjRaSXPQCdZR754bwGANUXkN7aPBlhTxGkKQ_JiY" target="_blank">Exercise02</a></li>
+            <li><a href="https://www.tinkercad.com/things/250YS1Wgpm8-exercise03/editel?sharecode=MJTiRTp6PJk9roarXNG4r2G9VLPh7fGr1SKrCKqmMiw" target="_blank">Exercise03</a></li>
+            <li><a href="https://www.tinkercad.com/things/kf3QbS5CQky-exercise04/editel?sharecode=LpolgVosooENnZPBY07XHWE2uX1beqDs84W0DnRNpWw" target="_blank">Exercise04</a></li>
+            <li><a href="https://www.tinkercad.com/things/1VcnSRzdCpQ-exercise05/editel?sharecode=6lG0H2EgAU2XepQQ8Bi7wRW71JC9npRg9QhcUrnyfu8" target="_blank">Exercise05</a></li>
+            <li><a href="https://github.com/rafael-rodrigues01/industrial-automation/tree/main/Exercises/List02" target="_blank">List02</a></li>
+          </ol>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

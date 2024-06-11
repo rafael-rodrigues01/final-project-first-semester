@@ -95,6 +95,11 @@ body {
   padding-bottom: 10px;
 }
 
+.introdution-card .card .image-info img{
+  width: 50%;
+  height: 50%;
+}
+
 .introdution-card .card .image-info h3 {
   padding-bottom: 10px;
 }
@@ -113,4 +118,49 @@ body {
 
 .introdution-card .card button:hover {
   background-color: #D44729;
+}
+
+footer {
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 10px 15px;
+}
+
+.footer-links a {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #21a1f1;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links li {
+    margin: 5px 0;
+  }
 }
