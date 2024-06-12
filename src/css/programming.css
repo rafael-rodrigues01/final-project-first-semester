@@ -70,6 +70,10 @@ body {
   text-align: center;
 }
 
+  h1 {
+  font-size: 2em;
+}
+
 .introdution-card .card p {
   padding: 10px;
 }
@@ -88,9 +92,37 @@ body {
   margin-bottom: 10px;
 }
 
+h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
 
+.content-container {
+  display: flex;
+  justify-content: center;
+  color: #020312;
+  margin-bottom: 10px;
+}
 
+.content-container .content {
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 5px;
+  width: 50%;
+}
 
+.content-container .content ul {
+  padding-left: 40px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 70%;
+}
 
 
 
