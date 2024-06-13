@@ -140,6 +140,7 @@ h2 {
 
 .image-container img {
   width: 70%;
+  border-radius: 5px;
 }
 
 /* code-container */
