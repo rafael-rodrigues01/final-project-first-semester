@@ -97,9 +97,19 @@ body {
   margin-bottom: 10px;
 }
 
+main .description {
+  padding: 10px;
+  text-align: center;
+}
+
 h2 {
   text-align: center;
   padding-bottom: 10px;
+}
+
+.heading-three {
+  text-align: center;
+  padding: 10px 0 10px 0;
 }
 
 .content-container {
@@ -142,7 +152,6 @@ h2 {
 }
 
 .code-container {
-  width: 50%;
   background-color: #2d2d2d;
   color: #cccccc;
   padding: 20px;
@@ -150,10 +159,13 @@ h2 {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   overflow: auto;
   white-space: pre-wrap;
+  margin-top: 20px;
 }
 
 .code-container code {
   font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  width: 100%;
 }
 
 .keyword {
@@ -173,6 +185,8 @@ h2 {
   color: #999999;
   font-style: italic;
 }
+
+
 
 
 

@@ -73,9 +73,9 @@
       </article>
     </article>
         
-        <div class="image-container">
-          <img src="./assets/variables.png" alt="Variables">
-        </div>
+    <div class="image-container">
+    <img src="./assets/variables.png" alt="Variables">
+    </div>
 
     <h2>Primitive variables</h2>
     <article class="content-container">
@@ -94,17 +94,18 @@
       </article>
     </article>
 
-        <div class="image-container">
-          <img src="./assets/primitive-variables.png" alt="Variables">
-        </div>
+    <div class="image-container">
+      <img src="./assets/primitive-variables.png" alt="Variables">
+    </div>
 
-        <h2>Operators</h2>
-        <div class="image-container">
-          <img src="./assets/operators.png" alt="Variables">
-        </div>
+    <h2>Operators</h2>
+    <div class="image-container">
+      <img src="./assets/operators.png" alt="Variables">
+    </div>
 
 
     <h2 class="subtitle">Decision structures</h2>
+
     <article class="content-container">
       <article class="content">
       <p>if/else</p> 
@@ -113,21 +114,234 @@
           <li>else: If not, does not execute the block of code.</li>
         </ul>
         
-        </article>
-        </article>
+      </article>
+      </article>
 
-          <div class="code-wrapper">
-            <div class="code-container">
-              <code>
-                  <span class="comment">// This is an example of if-else in JavaScript.</span><br>
-                  <span class="keyword">if</span> (<span class="variable">condition</span>) {<br>
-                      &nbsp;&nbsp;<span class="keyword">console</span>.<span class="keyword">log</span>(<span class="string">"Condition is true."</span>);<br>
-                  } <span class="keyword">else</span> {<br>
-                      &nbsp;&nbsp;<span class="keyword">console</span>.<span class="keyword">log</span>(<span class="string">"Condition is false."</span>);<br>
-                  }
-              </code>
-            </div>
-          </div>
+    <div class="code-wrapper">
+      <div class="code-container">
+        <code>
+            <span class="keyword">if</span> (<span class="variable">condition</span>) {<br>
+                &nbsp;&nbsp;<span class="keyword">console</span>.<span class="keyword">log</span>(<span class="string">"Condition is true."</span>);<br>
+            } <span class="keyword">else</span> {<br>
+                &nbsp;&nbsp;<span class="keyword">console</span>.<span class="keyword">log</span>(<span class="string">"Condition is false."</span>);<br>
+            }
+        </code>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="./assets/if-else.png" alt="Variables">
+    </div>
+
+    <article class="content-container">
+      <article class="content">
+
+      <p>Switch/case</p> 
+
+      <ul>
+        <li>switch: Executes a block of code depending on the value of the expression.</li>
+        <li>case: Defines the block of code to be executed for a specific value.</li>
+        <li>default: Defines the block of code to be executed if no case matches.</li>
+      </ul>
+        
+      </article>
+      </article>
+
+    <div class="code-wrapper">
+      <div class="code-container">
+        <code>
+            <span class="keyword">int</span> <span class="variable">value</span> = 2;<br><br>
+            <span class="keyword">switch</span> (<span class="variable">value</span>) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> 1:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">/*
+                block of instructions 1
+            */</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> 2:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">/*
+                block of instructions 2
+            */</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> 3:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">/*
+                block of instructions 3
+            */</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">default</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">/*
+                default block of instructions
+            */</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br>
+            }
+        </code>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="./assets/switch.png" alt="Variables">
+    </div>
+
+    <h2 class="subtitle">Repetition structures</h2>
+
+    <article class="content-container">
+      <article class="content">
+      <p>while loop</p> 
+        <ul>
+          <li>while: Executes a block of code as long as a specified condition is true.</li>
+        </ul>
+        
+      </article>
+      </article>
+
+    <div class="code-wrapper">
+      <div class="code-container">
+        <code>
+            <span class="keyword">int</span> <span class="variable">i</span> = 0;<br><br>
+            <span class="keyword">while</span> (<span class="variable">i</span> &lt; 10) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">/*
+                block of instructions
+            */</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">i</span>++;<br>
+            }
+        </code>
+      </div>
+    </div>
+
+    <article class="content-container">
+      <article class="content">
+      <p>do-while loop</p> 
+
+        <ul>
+          <li>do-while: Executes a block of code once, and then repeats the loop as long as a specified condition is true.</li>
+        </ul>
+        
+      </article>
+      </article>
+
+    <div class="code-wrapper">
+      <div class="code-container">
+          <code>
+              <span class="keyword">int</span> <span class="variable">i</span> = 0;<br><br>
+              <span class="keyword">do</span> {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">/*
+                  block of instructions
+              */</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">i</span>++;<br>
+              } <span class="keyword">while</span> (<span class="variable">i</span> &lt;= 0);
+          </code>
+        </div>
+    </div>
+
+    <article class="content-container">
+      <article class="content">
+      <p>for loop</p> 
+
+        <ul>
+          <li>for: Executes a block of code a specified number of times.</li>
+        </ul>
+        
+      </article>
+      </article>
+
+    <div class="code-wrapper">
+      <div class="code-container">
+        <code>
+            <span class="keyword">for</span> (<span class="keyword">int</span> <span class="variable">i</span>=0; <span class="variable">i</span>&lt;5; <span class="variable">i</span>++) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">/*
+                block of instructions
+            */</span><br>
+            }
+        </code>
+      </div>
+    </div>
+    
+    <h2 class="subtitle">Summary of Arrays, Matrices, and Functions.</h2>
+
+    <article class="content-container">
+      <article class="content">
+      <p>Arrays</p> 
+
+        <ul>
+          <li>Arrays in Java are data structures that store multiple elements of the same type in a single variable.</li>
+        </ul>
+      </article>
+      </article>
+
+    <article class="content-container">
+      <article class="content">
+      <p>Matrices (2D Arrays)</p> 
+
+        <ul>
+          <li>Matrices are two-dimensional structures that store elements organized in rows and columns.</li>
+        </ul>
+      </article>
+      </article>
+
+    <article class="content-container">
+      <article class="content">
+      <p>Functions</p> 
+
+        <ul>
+          <li>Functions in Java are reusable blocks of code that perform a specific task. They may or may not return values.</li>
+        </ul>
+      </article>
+    </article>
+      
+    <h2 class="subtitle">Object-Oriented Programming (OOP):</h2>
+      
+    <article class="content-container">
+      <article class="content">
+        <h3>Plato and Classes in the World of Ideas:</h3>
+          <ul>
+            <li>Plato proposed that classes exist only in the world of ideas, as ideal representations.</li>
+            <li>This theory highlights abstraction and the distinction between perceived reality and ideal concepts.</li>
+          </ul>
+        </article>
+      </article>
+
+    <article class="content-container">
+      <article class="content">
+        <h3>Object-Oriented Programming (OOP):</h3>
+        <ul>
+          <li>OOP uses classes and objects to model real-world entities in code.</li>
+          <li>This approach aims to structure code intuitively and closely to reality.</li>
+        </ul>
+      </article>
+    </article>
+          
+    <h2 class="subtitle">Structure of a Class</h2>
+    
+    <p class="description">A class in object-oriented programming is a generic abstraction of objects, representing their instances. Its basic structure includes the class name, attributes, and methods.</p>
+    <article class="content-container">
+      <article class="content">
+        <h3>Guidelines and best practices</h3>
+          <ul>
+            <li>Class names start with an uppercase letter. For names with more than one word, use UpperCamelCase.</li>
+            <li>Attributes and methods start with a lowercase letter. For names with more than one word, use lowerCamelCase.</li>
+            <li>Attributes use access modifiers like private to adhere to encapsulation principles, as discussed in the next section.</li>
+          </ul>
+        </article>
+      </article>
+
+    <div class="image-container">
+      <img src="./assets/class-diagram.png" alt="Variables">
+    </div>
+
+    <h2 class="subtitle">Encapsulation</h2>
+    <p class="description">Encapsulation in object-oriented programming hides internal class details and exposes only necessary interfaces for interaction.</p>
+    <p class="description">It ensures data integrity and reduces dependency on implementation details by declaring attributes as private, thus controlling access and enforcing modular design principles. This approach enhances code reliability, security, and maintainability.</p>
+    <article class="content-container">
+      <article class="content">
+          <ul>
+            <li><strong>public:</strong> A member (attribute or method) marked as public in programming can be accessed from anywhere, including within the same class, classes in the same package, and classes in different packages.</li>
+            <li><strong>protected:</strong> The protected modifier allows a member to be accessed within its own class, by classes in the same package, and by subclasses (even if they are in different packages).
+            </li>
+            <li><strong>private:</strong>A private member can only be accessed within its own class. It cannot be accessed from outside the class, not even by classes in the same package or subclasses.</li>
+          </ul>
+        </article>
+      </article>
+
+
 
 
     <footer>
