@@ -1,21 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data SCIENCE</title>
-  <link rel="stylesheet" href="./src/css/data-science.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science</title>
+    <link rel="stylesheet" href="./src/css/data-science.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="./index.html">HOME</a>
+      <a href="./industrial.html">INDUSTRIAL AUTOMATION</a>
+      <a href="./web.html">WEB DEVELOPMENT</a>
+      <a href="./database.html">DATABASE</a>
+      <a href="./programming.html">PROGRAMMING LANGUAGE</a>
+      <a href="./data-science.html">DATA SCIENCE</a>
+    </nav>
 
-</head>
-<body>
-  <nav class="menu">
-    <a href="./index.html">HOME</a>
-    <a href="./industrial.html" >INDUSTRIAL AUTOMATION</a>
-    <a href="./web.html" >WEB DEVELOPMENT</a>
-    <a href="./database.html" >DATABASE</a>
-    <a href="./programming.html" >PROGRAMMING LANGUAGE</a>
-    <a href="./data-science.html" >DATA SCIENCE</a>
-  </nav>
-  <h1>Data Science</h1>
-</body>
+    <main class="container">
+      <!-- initial component -->
+      <section class="introdution-card">
+        <div class="card">
+          <h1 class="text">Data Science</h1>
+          <p class="text">Professor: Cainã</p>
+          <div>
+            <img class="img" src="./assets/python.png" alt="c++" />
+            <img class="img" src="./assets/collab.png" alt="tinkercad" />
+          </div>
+        </div>
+      </section>
+
+      <!-- left-buttom -->
+      <a class="left-button" href="./index.html">
+        <img src="./assets/left-button.png" alt="left-button" title="HOME" />
+      </a>
+
+      <!-- first content -->
+
+      <h2>Mathematics and Descriptive Statistics</h2>
+
+      <h3>Principles of Statistics</h3>
+      <article class="content-container">
+        <article class="content">
+          <p class="description">Definition and Objectives</p>
+          <ul>
+            <li>Statistics: The science that deals with processes for collecting, presenting, and interpreting data effectively.</li>
+            <li>Objective: To provide information about data under analysis for a better understanding of the represented facts.</li>
+            <li>Descriptive statistics: Initial stage of data analysis aimed at describing observed data.</li>
+          </ul>
+        </article>
+      </article>
+
+      <h3>Data and Collection</h3>
+      <article class="content-container">
+        <article class="content">
+          <p class="description"><span>Data:</span> Can be obtained from a population or a sample.</p>
+          <ul>
+            <li>Population: Set of elements sharing at least one common characteristic.
+            </li>
+            <li>Sample: Representative subset of a population.
+            </li>
+          </ul>
+        </article>
+      </article>
+
+      <h3>Elements and Variables</h3>
+      <article class="content-container">
+        <article class="content">
+          <ul>
+            <li>Element: Each unit observed in the study.</li>
+            <li>Variable: Characteristic observed, measured, or counted in the elements of a population or sample.</li>
+            <ul>
+              <li>Qualitative variable: Takes values of attributes or qualities (categorical).</li>
+              <li>Quantitative variable: Takes numerical values.</li>
+            </ul>
+          </ul>
+        </article>
+      </article>
+
+      <!-- second content -->
+
+      <h3 class="main-title">Sampling</h3>
+
+      <div class="image-container">
+        <img src="./assets/data-science/sampling.png" alt="Sampling">
+      </div>
+
+      <article class="content-container">
+        <article class="content">
+          <ul>
+            <li>Random: each element of the population has an equal chance of being selected.</li>
+            <li>Systematic: a random selection of the first element of the sample is made, and then the remaining elements are chosen using fixed or systematic intervals.</li>
+            <li>Stratified: separates the elements into homogeneous groups and then a random sample is taken from each group (stratum).</li>
+          </ul>
+        </article>
+      </article>
+
+      <div class="image-container">
+        <img src="./assets/data-science/sampling-collab-example.png" alt="sampling-collab-example">
+      </div>
+
+
+
+
+    </main>
+  </body>
 </html>
