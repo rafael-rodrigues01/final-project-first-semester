@@ -1,311 +1,418 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DATABASE</title>
-  <link rel="stylesheet" href="./src/css/database.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DATABASE</title>
+    <link rel="stylesheet" href="./src/css/database.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="./index.html">HOME</a>
+      <a href="./industrial.html">INDUSTRIAL AUTOMATION</a>
+      <a href="./web.html">WEB DEVELOPMENT</a>
+      <a href="./database.html">DATABASE</a>
+      <a href="./programming.html">PROGRAMMING LANGUAGE</a>
+      <a href="./data-science.html">DATA SCIENCE</a>
+    </nav>
 
-</head>
-<body>
-  <nav class="menu">
-    <a href="./index.html">HOME</a>
-    <a href="./industrial.html" >INDUSTRIAL AUTOMATION</a>
-    <a href="./web.html" >WEB DEVELOPMENT</a>
-    <a href="./database.html" >DATABASE</a>
-    <a href="./programming.html" >PROGRAMMING LANGUAGE</a>
-    <a href="./data-science.html" >DATA SCIENCE</a>
-  </nav>
-  
-  
-  <main class="container">
-    <!-- initial component -->
-    <section class="introdution-card">
-      <div class="card">
-        <h1 class="text">Database</h1>
-        <p class="text">Professor: Cainã</p>
-        <img class="img" src="./assets/postgreSQL.png" alt="postgreSQL" />
-        <img class="img" src="./assets/diagrama-er.png" alt="diagrama-er" />
-        <img class="img" src="./assets/mongodb.png" alt="mongodb" />
-      </div>
-    </section>
-
-    <!-- left-buttom -->
-    <a class="left-button" href="./index.html">
-      <img src="./assets/left-button.png" alt="left-button" title="HOME"/>
-    </a>
-
-     <!-- first-project -->
-     <section class="introdution-card">
-      <div class="card">
-        <div class="image-info">
-          <h3>Types of Data</h3>
-          <img src="./assets/tipes-of-data.png" alt="Tipes of Data" />
+    <main class="container">
+      <!-- initial component -->
+      <section class="introdution-card">
+        <div class="card">
+          <h1 class="text">Database</h1>
+          <p class="text">Professor: Cainã</p>
+          <img
+            class="img"
+            src="./assets/database/postgreSQL.png"
+            alt="PostgreSQL"
+          />
+          <img
+            class="img"
+            src="./assets/database/diagrama-er.png"
+            alt="Diagrama-er"
+          />
+          <img class="img" src="./assets/database/mongoDB.png" alt="MongoDB" />
         </div>
-        <h3>What I learned:</h3>
-        <article class="cardinalidade-container">
-          <article class="content">
-            <ul>
-              <li>While data is crucial, it is the context that gives it meaning and relevance, transforming it into useful information for analysis, decision-making, and knowledge creation.</li>
-            </ul>
+      </section>
+
+      <!-- left-buttom -->
+      <a class="left-button" href="./index.html">
+        <img src="./assets/left-button.png" alt="left-button" title="HOME" />
+      </a>
+
+      <!-- first-project -->
+      <section class="introdution-card">
+        <div class="card">
+          <div class="image-info">
+            <h3>Types of Data</h3>
+            <img
+              src="./assets/database/tipes-of-data.png"
+              alt="Tipes of Data"
+            />
+          </div>
+          <h3>What I learned:</h3>
+          <article class="cardinalidade-container">
+            <article class="content">
+              <ul>
+                <li>
+                  While data is crucial, it is the context that gives it meaning
+                  and relevance, transforming it into useful information for
+                  analysis, decision-making, and knowledge creation.
+                </li>
+              </ul>
+            </article>
           </article>
+        </div>
+      </section>
+
+      <h2 class="title">Relational Database</h2>
+
+      <section class="introdution-card">
+        <div class="card">
+          <div class="image-info">
+            <img
+              src="./assets/database/data-modeling.png"
+              alt="Tipes of Data"
+            />
+          </div>
+        </div>
+      </section>
+
+      <h3>Cardinality</h3>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>1:1</p>
+          <ul>
+            <li>
+              An employee belongs to at least 1 department and at most 1
+              department.
+            </li>
+            <li>
+              A department can have at least 1 employee and at most n employees.
+            </li>
+          </ul>
         </article>
-      </div>
-    </section>
-
-    <h2 class="title">Relational Database</h2>
-
-    <section class="introdution-card">
-      <div class="card">
-        <div class="image-info">
-          <img src="./assets/database/data-modeling.png" alt="Tipes of Data" />
-        </div>
-      </div>
-    </section>
-
-    <h3>Cardinality</h3>
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>1:1</p>
-        <ul>
-          <li>An employee belongs to at least 1 department and at most 1 department.</li>
-          <li>A department can have at least 1 employee and at most n employees.</li>
-        </ul>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>1:N</p>
-        <ul>
-          <li>A department can have at least 1 employee and at most n employees.</li>
-        </ul>
-      </article>
-    </article>
-
-    <section class="introdution-card">
-      <div class="card">
-        <h3>Logical Model</h3>
-        <article class="cardinalidade-container">
-          <article class="content">
-            <p>The logical model is crucial for ensuring data is organized coherently and efficiently, facilitating manipulation, querying, and maintenance of information within a database.</p>
-          </article>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>1:N</p>
+          <ul>
+            <li>
+              A department can have at least 1 employee and at most n employees.
+            </li>
+          </ul>
         </article>
-        <article class="cardinalidade-container">
-          <article class="content">
-          <p>Definition:</p>
-            <ul>
-              <li>Represents the logical structure and organization of data in a database.</li>
-              <li>Describes how data is stored and related to each other without concern for physical implementation details.</li>
-            </ul>
-          </article>
-        </article>  
-
-        <article class="cardinalidade-container">
-          <article class="content">
-          <p>Primary Key and Constraints:</p>
-            <ul>
-              <li>Primary Key: Attribute or set of attributes that uniquely identifies each record in a table.</li>
-              <li>Integrity Constraints: Rules that ensure data accuracy and consistency, such as foreign key constraints and unique value constraints.</li>
-            </ul>
-          </article>
-        </article>    
-      </div>
-    </section>
-
-    <h3>Physical Model</h3>
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Creation of the table</p>
-        <ul>
-          <li>Patient: name, CPF, age</li>
-          <li>Doctor: name, CRM, specialty</li>
-        </ul>
       </article>
-    </article>
 
-    <section class="introdution-card">
-      <div class="card">
-        <h3>Business rule</h3>
-        <article class="cardinalidade-container">
-          <article class="content">
-          <p>Definition:</p>
-            <ul>
-              <li>A patient can have at least 1 doctor and at most n doctors.</li>
-              <li>A doctor can have at least 1 patient and at most n patients.</li>
-            </ul>
+      <section class="introdution-card">
+        <div class="card">
+          <h3>Logical Model</h3>
+          <article class="cardinalidade-container">
+            <article class="content">
+              <p>
+                The logical model is crucial for ensuring data is organized
+                coherently and efficiently, facilitating manipulation, querying,
+                and maintenance of information within a database.
+              </p>
+            </article>
           </article>
-        </article>  
-      </div>
-    </section>
+          <article class="cardinalidade-container">
+            <article class="content">
+              <p>Definition:</p>
+              <ul>
+                <li>
+                  Represents the logical structure and organization of data in a
+                  database.
+                </li>
+                <li>
+                  Describes how data is stored and related to each other without
+                  concern for physical implementation details.
+                </li>
+              </ul>
+            </article>
+          </article>
 
-    <section class="introdution-card">
-      <div class="card">
-        <div class="image-info">
-          <img src="./assets/database/business-rule.png" alt="Tipes of Data" />
+          <article class="cardinalidade-container">
+            <article class="content">
+              <p>Primary Key and Constraints:</p>
+              <ul>
+                <li>
+                  Primary Key: Attribute or set of attributes that uniquely
+                  identifies each record in a table.
+                </li>
+                <li>
+                  Integrity Constraints: Rules that ensure data accuracy and
+                  consistency, such as foreign key constraints and unique value
+                  constraints.
+                </li>
+              </ul>
+            </article>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <h3>Database Administration</h3>
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Comandos DDL - Data Definition Language</p>
-        <ul>
-          <li>CREATE TABLE</li>
-          <li>ALTER TABLE</li>
-          <li>DROP TABLE</li>
-        </ul>
+      <h3>Physical Model</h3>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Creation of the table</p>
+          <ul>
+            <li>Patient: name, CPF, age</li>
+            <li>Doctor: name, CRM, specialty</li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Comandos DML - Data Manipulation Language</p>
-        <ul>
-          <li>INSERT</li>
-          <li>UPDATE</li>
-          <li>DELETE</li>
-          <li>SELECT</li>
-        </ul>
+      <section class="introdution-card">
+        <div class="card">
+          <h3>Business rule</h3>
+          <article class="cardinalidade-container">
+            <article class="content">
+              <p>Definition:</p>
+              <ul>
+                <li>
+                  A patient can have at least 1 doctor and at most n doctors.
+                </li>
+                <li>
+                  A doctor can have at least 1 patient and at most n patients.
+                </li>
+              </ul>
+            </article>
+          </article>
+        </div>
+      </section>
+
+      <section class="introdution-card">
+        <div class="card">
+          <div class="image-info">
+            <img
+              src="./assets/database/business-rule.png"
+              alt="Tipes of Data"
+            />
+          </div>
+        </div>
+      </section>
+
+      <h3>Database Administration</h3>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Comandos DDL - Data Definition Language</p>
+          <ul>
+            <li>CREATE TABLE</li>
+            <li>ALTER TABLE</li>
+            <li>DROP TABLE</li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Comandos DQL - Data Query Language</p>
-        <ul>
-          <li>SELECT</li>
-          <li>OPERADORES SQL</li>
-          <li>FUNÇÕES SQL</li>
-          <li>ORDER BY</li>
-          <li>JOIN</li>
-          <li>GROUP BY</li>
-          <li>UNION, INTERSECT and EXCEPT</li>
-          <li>ALIASES (Apelidos para tabelas ou colunas)</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Comandos DML - Data Manipulation Language</p>
+          <ul>
+            <li>INSERT</li>
+            <li>UPDATE</li>
+            <li>DELETE</li>
+            <li>SELECT</li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Comandos DTL - Data Trasaction Language</p>
-      <p>Linguagem de Transação de Dados.</p>
-      <p>São os comandos para controle de transação.</p>
-        <ul>
-          <li>São comandos DTL : BEGIN TRANSACTION, COMMIT E ROLLBACK</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Comandos DQL - Data Query Language</p>
+          <ul>
+            <li>SELECT</li>
+            <li>OPERADORES SQL</li>
+            <li>FUNÇÕES SQL</li>
+            <li>ORDER BY</li>
+            <li>JOIN</li>
+            <li>GROUP BY</li>
+            <li>UNION, INTERSECT and EXCEPT</li>
+            <li>ALIASES (Apelidos para tabelas ou colunas)</li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Example of a relational database:</p>
-        <ul>
-          <li>PostgreSQL</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Comandos DTL - Data Trasaction Language</p>
+          <p>Linguagem de Transação de Dados.</p>
+          <p>São os comandos para controle de transação.</p>
+          <ul>
+            <li>São comandos DTL : BEGIN TRANSACTION, COMMIT E ROLLBACK</li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <h2 class="title">NoSQL Database</h2>
-
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Flexibility in data model:</p>
-        <ul>
-          <li>Allows storing unstructured, semi-structured, and structured data without the need for a fixed schema.</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Example of a relational database:</p>
+          <ul>
+            <li>PostgreSQL</li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Horizontal scalability:</p>
-        <ul>
-          <li>Designed to handle large volumes of data distributed across multiple servers.</li>
-        </ul>
+      <h2 class="title">NoSQL Database</h2>
+
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Flexibility in data model:</p>
+          <ul>
+            <li>
+              Allows storing unstructured, semi-structured, and structured data
+              without the need for a fixed schema.
+            </li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Types of NoSQL databases:</p>
-        <ul>
-          <li>Document: MongoDB, Couchbase.</li>
-          <li>Key-value: Redis, Amazon DynamoDB.</li>
-          <li>Column: Apache Cassandra, HBase.</li>
-          <li>Graph: Neo4j, Amazon Neptune.</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Horizontal scalability:</p>
+          <ul>
+            <li>
+              Designed to handle large volumes of data distributed across
+              multiple servers.
+            </li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Flexibility and performance:</p>
-        <ul>
-          <li>Efficient for handling large volumes of unstructured and semi-structured data.</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Types of NoSQL databases:</p>
+          <ul>
+            <li>Document: MongoDB, Couchbase.</li>
+            <li>Key-value: Redis, Amazon DynamoDB.</li>
+            <li>Column: Apache Cassandra, HBase.</li>
+            <li>Graph: Neo4j, Amazon Neptune.</li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Flexibility in data model:</p>
-        <ul>
-          <li>Allows storing unstructured, semi-structured, and structured data without the need for a fixed schema.</li>
-          <li>UPDATE</li>
-          <li>DELETE</li>
-          <li>SELECT</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Flexibility and performance:</p>
+          <ul>
+            <li>
+              Efficient for handling large volumes of unstructured and
+              semi-structured data.
+            </li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Usage across various industries:</p>
-        <ul>
-          <li>Widely used in technology, finance, media, healthcare, among others.</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Flexibility in data model:</p>
+          <ul>
+            <li>
+              Allows storing unstructured, semi-structured, and structured data
+              without the need for a fixed schema.
+            </li>
+            <li>UPDATE</li>
+            <li>DELETE</li>
+            <li>SELECT</li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Complementary to relational databases:</p>
-        <ul>
-          <li>Provide solutions for specific data storage and retrieval problems in modern software development environments.</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Usage across various industries:</p>
+          <ul>
+            <li>
+              Widely used in technology, finance, media, healthcare, among
+              others.
+            </li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <article class="cardinalidade-container">
-      <article class="content">
-      <p>Example of a non-relational database:</p>
-        <ul>
-          <li>MongoDB</li>
-        </ul>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Complementary to relational databases:</p>
+          <ul>
+            <li>
+              Provide solutions for specific data storage and retrieval problems
+              in modern software development environments.
+            </li>
+          </ul>
+        </article>
       </article>
-    </article>
 
-    <a class="top-button" href="#">
-      <img src="./assets/left-button.png" alt="top-button" title="TOP" />
-    </a>
+      <article class="cardinalidade-container">
+        <article class="content">
+          <p>Example of a non-relational database:</p>
+          <ul>
+            <li>MongoDB</li>
+          </ul>
+        </article>
+      </article>
 
-    <h2 class="title">Activities</h2>
+      <a class="top-button" href="#">
+        <img src="./assets/left-button.png" alt="top-button" title="TOP" />
+      </a>
 
-    <footer>
-      <div class="footer-container">
-        <ol class="footer-links">
-          <li><a href="https://github.com/rafael-rodrigues01/database/tree/main/List01" target="_blank">List01</a></li>
-          <li><a href="https://github.com/rafael-rodrigues01/database/tree/main/List02" target="_blank">List02</a></li>
-          <li><a href="https://github.com/rafael-rodrigues01/database/tree/main/SistemaEducacional" target="_blank">SistemaEducacional</a></li>
-          <li><a href="https://github.com/rafael-rodrigues01/database/tree/main/exercicio-aula10-04-24" target="_blank">exercicio-aula10-04-24</a></li>
-          <li><a href="https://github.com/rafael-rodrigues01/database/blob/main/aula20-03-24" target="_blank">aula20-03-24</a></li>
-          <li><a href="https://github.com/rafael-rodrigues01/database/blob/main/aula27-03-24.sql" target="_blank">aula27-03-24.sql</a></li>
-          <li><a href="https://github.com/rafael-rodrigues01/database/blob/main/aula28-02-24.sql" target="_blank">aula28-02-24.sql</a></li>
-        </ol>
-      </div>
-    </footer>
-  </main>
-</body>
+      <h2 class="title">Activities</h2>
+
+      <footer>
+        <div class="footer-container">
+          <ol class="footer-links">
+            <li>
+              <a
+                href="https://github.com/rafael-rodrigues01/database/tree/main/List01"
+                target="_blank"
+                >List01</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/rafael-rodrigues01/database/tree/main/List02"
+                target="_blank"
+                >List02</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/rafael-rodrigues01/database/tree/main/SistemaEducacional"
+                target="_blank"
+                >SistemaEducacional</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/rafael-rodrigues01/database/tree/main/exercicio-aula10-04-24"
+                target="_blank"
+                >exercicio-aula10-04-24</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/rafael-rodrigues01/database/blob/main/aula20-03-24"
+                target="_blank"
+                >aula20-03-24</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/rafael-rodrigues01/database/blob/main/aula27-03-24.sql"
+                target="_blank"
+                >aula27-03-24.sql</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/rafael-rodrigues01/database/blob/main/aula28-02-24.sql"
+                target="_blank"
+                >aula28-02-24.sql</a
+              >
+            </li>
+          </ol>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
