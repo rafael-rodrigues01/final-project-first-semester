@@ -1,54 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final project first semester</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="./industrial.html">INDUSTRIAL AUTOMATION</a>
+      <a href="./web.html">WEB DEVELOPMENT</a>
+      <a href="./database.html">DATABASE</a>
+      <a href="./programming.html">PROGRAMMING LANGUAGE</a>
+      <a href="./data-science.html">DATA SCIENCE</a>
+    </nav>
 
-<nav class="menu">
-  <a href="./industrial.html" >INDUSTRIAL AUTOMATION</a>
-  <a href="./web.html" >WEB DEVELOPMENT</a>
-  <a href="./database.html" >DATABASE</a>
-  <a href="./programming.html" >PROGRAMMING LANGUAGE</a>
-  <a href="./data-science.html" >DATA SCIENCE</a>
-</nav>
-
-<main class="profile">
-    <section class="informations">
-      <img src="./assets/profile-picture.png" alt="profile-picture">
-      <div>
-        <div class="icons">
-          <a href="https://www.linkedin.com/in/rafaelrodriguesdev/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-            
-          </a>
-          <a href="https://github.com/rafael-rodrigues01" target="_blank">
-            <i class="fab fa-github-square"></i>
-          </a>
+    <main class="profile">
+      <section class="informations">
+        <img src="./assets/home/profile-picture.png" alt="profile-picture" />
+        <div>
+          <div class="icons">
+            <a
+              href="https://www.linkedin.com/in/rafaelrodriguesdev/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/rafael-rodrigues01" target="_blank">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </div>
+          <h1>I am Rafael Rodrigues</h1>
         </div>
-        <h1>I am Rafael Rodrigues</h1>
-      </div>
-    </section>
+      </section>
 
       <div class="images">
-        
-        <img src="./assets/title.png" alt="title">
-        
+        <img src="./assets/home/title.png" alt="title" />
+
         <a href="#about">
-          <img src="./assets/scroll-button.png" alt="scroll-button">
+          <img src="./assets/home/scroll-button.png" alt="scroll-button" />
         </a>
       </div>
 
-    <h2 id="about">About Me</h2>
+      <section id="about" class="introduction">
+        <h2>About Me</h2>
+        <p>
+          I am a Systems Analysis and Development student and a technology
+          enthusiast, always seeking continuous improvement.
+        </p>
+        <p>My skills include:</p>
+        <ul class="skills">
+          <li>
+            <img
+              src="./assets/web-development/html.png"
+              alt="HTML"
+              title="HTML"
+            />
+          </li>
+          <li>
+            <img src="./assets/web-development/css.png" alt="CSS" title="CSS" />
+          </li>
+          <li>
+            <img
+              src="./assets/web-development/javascript.png"
+              alt="JavaScript"
+              title="JavaScript"
+            />
+          </li>
+          <li>
+            <img src="./assets/home/nodejs.png" alt="Node.js" title="Node.js" />
+          </li>
+          <li>
+            <img
+              src="./assets/home/react.png"
+              alt="React.js"
+              title="React.js"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/database/postgreSQL.png"
+              alt="PostgreSQL"
+              title="PostgreSQL"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/industrial-automation/c++.png"
+              alt="C++"
+              title="C++"
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
 
-    <p>I am a Systems Analysis and Development student and a technology enthusiast, 
-      always seeking continuous improvement.</p>
-</main>
+    <footer>
+      <p>&copy; 2024 Rafael Rodrigues. All rights reserved.</p>
+    </footer>
 
-<script src="./src/js/index.js"></script>
-</body>
+    <script src="./src/js/index.js"></script>
+  </body>
 </html>
